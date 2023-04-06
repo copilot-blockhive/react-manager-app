@@ -20,10 +20,7 @@ function App() {
   return (
     //loop 1->10
     <div className="App">
-      <li className="list-group-item">{cards}</li>
 
-      <hr />
-      <h1>concept of composition</h1>
       <ListItem items={items}/>
     </div>
   );

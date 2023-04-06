@@ -1,18 +1,19 @@
 import Card from "../card/card";
 import Date from "../date/date";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Item(props) {
   return (
-    <Card className='mt-2 mx-2'>
+    <Card  className='mt-2 mx-2'>
+      <div>
+        <FontAwesomeIcon icon={["fas", "close"]} />
+      </div>
       <div className="card-body">
         <div className="d-flex flex-wrap flex-row align-items-center">
           <Date date={props.date}/>
           <div className='flex-grow-1 text-left'>
             <span>
-                s
-              {/* {props.title}
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content. */}
+              {props.title}
             </span>
           </div>
           <div>
